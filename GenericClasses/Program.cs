@@ -1,4 +1,5 @@
 ﻿
+using GenericClasses.GenericInMethods;
 using GenericClasses.GenericBasicClass;
 using GenericClasses.GenericsWithRestrictions;
 using GenericClasses.GenericWithInterfaces;
@@ -34,3 +35,10 @@ intRepo.Add(10);
 intRepo.Add(11);
 Console.WriteLine(intRepo.Get(0));
 Console.WriteLine(intRepo.Get(1));
+
+
+//Genéricos en Métodos
+//Los métodos dentro de una clase pueden ser genéricos sin que toda la clase sea genérica.
+Utility.Print(42);
+Utility.Print(8.4);
+Utility.Print("Generics in C#");
