@@ -5,6 +5,7 @@ using GenericClasses.GenericsWithRestrictions;
 using GenericClasses.GenericWithInterfaces;
 using GenericClasses.GenericsWithDelegates;
 using GenericClasses.GenericsWithComparison;
+using GenericClasses.GenericsWithHeritage;
 
 
 
@@ -68,3 +69,15 @@ foreach (var number in numbers)
 {
     Console.WriteLine($"{number}");
 }
+
+
+//7: Clases Genéricas con Herencia
+//Puedes crear una clase genérica que herede de otra clase genérica, 
+//extendiendo sus capacidades.
+var labeledContainer = new LabeledContainer<int>
+{
+    Content = 100,
+    Label = "Integer Container"
+};
+
+Console.WriteLine($"{labeledContainer.Label}: {labeledContainer.Content}");
