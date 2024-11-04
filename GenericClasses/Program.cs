@@ -1,6 +1,7 @@
 ﻿
 using GenericClasses.GenericBasicClass;
 using GenericClasses.GenericsWithRestrictions;
+using GenericClasses.GenericWithInterfaces;
 
 
 
@@ -23,3 +24,13 @@ foreach (var item in repo.GetAll())
 {
     Console.WriteLine(item);
 }
+
+
+
+// Genéricos con Interfaces
+// Los genéricos también pueden implementar interfaces para mayor flexibilidad en su uso.Uso:
+IRepository<int> intRepo = new MemoryRepository<int>();
+intRepo.Add(10);
+intRepo.Add(11);
+Console.WriteLine(intRepo.Get(0));
+Console.WriteLine(intRepo.Get(1));
