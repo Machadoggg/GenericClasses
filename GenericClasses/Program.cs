@@ -3,6 +3,7 @@ using GenericClasses.GenericInMethods;
 using GenericClasses.GenericBasicClass;
 using GenericClasses.GenericsWithRestrictions;
 using GenericClasses.GenericWithInterfaces;
+using GenericClasses.GenericsWithDelegates;
 
 
 
@@ -42,3 +43,13 @@ Console.WriteLine(intRepo.Get(1));
 Utility.Print(42);
 Utility.Print(8.4);
 Utility.Print("Generics in C#");
+
+
+
+//Genéricos con Delegados
+//Podemos usar genéricos para crear delegados que acepten cualquier tipo.
+Transformer<int> squareInt = TransformerDemo.Square;
+Console.WriteLine(squareInt(5)); // Output: 25
+
+Transformer<double> squareDouble = TransformerDemo.Square;
+Console.WriteLine(squareDouble(3.5)); // Output: 12.25
