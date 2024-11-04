@@ -1,5 +1,5 @@
 ﻿
-using GenericClasses.BasicGenericClass;
+using GenericClasses.GenericBasicClass;
 using GenericClasses.GenericsWithRestrictions;
 
 

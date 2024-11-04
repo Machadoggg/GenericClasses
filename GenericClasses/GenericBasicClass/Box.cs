@@ -1,4 +1,4 @@
-﻿namespace GenericClasses.BasicGenericClass
+﻿namespace GenericClasses.GenericBasicClass
 {
     public class Box<T>
     {
